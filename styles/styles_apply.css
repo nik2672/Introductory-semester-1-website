@@ -1,0 +1,231 @@
+.logo {
+  display: flex;
+  align-items: left;
+}
+
+.logo img {
+  width: 100%;
+  min-height: 50px; /* Add a minimum height */
+  object-fit: contain;
+}
+
+h2{
+  margin-left: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  margin-left: 0px;
+  font-family: 'Roboto'
+}
+
+ body {
+  background-color: white;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  width: 95%;
+  padding-bottom: 0;
+}
+
+
+.content {
+  width: 100%;
+  padding-bottom: 0;
+  text-align: center;
+  margin-left: 300px; /* add margin */
+}
+
+
+
+.table {
+  width: 100%;
+  padding-top: 0;
+  row-gap: 0px !important;
+  margin-left: 200px;
+}
+
+.blockfull_h {
+  display: block;
+  width: 100%;
+  height: 580px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 14px 28px;
+  font-size: 60px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blockhalf_h {
+  display: block;
+  width: 100%;
+  height: 290px;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 60px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blockslim_h {
+  display: block;
+  width: 100%;
+  height: 80px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 14px 28px;
+  font: bold 36px/1.5 'Roboto', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  max-height: 80px; /*sadded*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ADD8E6;
+  margin-right: 20px; /* add margin */
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #267f4c;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+*:hover {
+  transform: translate(0, -1px);
+}
+
+
+
+.navbar li a { /*enhancement - animation*/
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover { /*enhancement - animation */
+    color: rgba(0,151,141,1);
+}
+
+
+section {
+  margin: 10px auto;
+  max-width: 800px;
+  padding: 0 10px;
+}
+
+
+/* responsive design*/
+
+@media screen and (max-width: 600px) {
+  .Logo {
+    width: 100%;
+  }
+}
+
+
+/* Use a flexbox layout for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Use relative units for font sizes */
+
+
+.button{
+  margin-left: 500px;
+}
+
+/* Use a grid-based layout for the form */
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Use media queries to adjust the layout at different screen sizes */
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 1000px) {
+  /* Adjust the navbar to stack on small screens */
+  .navbar{
+    align-items: center;
+    
+}
+.navbar ul li{
+    display: block;
+    text-align: center;
+    padding: 1%;
+    margin-top: 0;
+    margin-right: 50px;
+    background-color: lightblue;
+}
+.navbar ul li a{
+  align-items: center;
+  display: block;
+  font-size: 12px;
+  padding: 2%;
+}
+
+.narbar ul li::after{ /*Remove the underline animation*/
+  display: none;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.logo{
+  display: block;
+}
+.table{
+  margin-left: 20% !important;
+
+}
+}
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Creating Web Applications"/>
+        <meta name="keywords" content="HTML, CSS, and Javascript"/>
+        <meta name="author" content="Aster"/>
+        <link rel="stylesheet" href="styles/styles_apply.css">
+        <link rel="php" href="apply.php">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>Apply!</title>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="images/logo.png" width="300" height="300" class="Logo">
+                <ul> <!-- Navigation Bar added to the Top -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="enhancements.html">Enhancements</a></li>
+                </ul>
+            </div>
+        <section class="main">
+            <h1 class="blockslim_h">Apply Here!</h1> 
+        </section>
+
+        <section>
+            <table class="table">
+                <tr>
+                    <td class="sidebar" rowspan="18"></td>
+                </tr>
+                <tr>
+                    <td class="content"><h2>Application Form</h2></td> <!--h3 changed to h2 -->
+                </tr>
+                <hr>
+                <form action="https://mercury.swin.edu.au/it000000/formtest.php">
+                    <tr>
+                        <td class="content">Job Reference Number: <input type="text" name="reference_num" placeholder="XXXXX" maxlength="5" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">First Name: <input type="text" name="f_name" placeholder="John" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Last Name: <input type="text" name="l_name" placeholder="Doe" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Date of Birth: <input type="date" name="DOB" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Gender: <label for="male">Male</label>  <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="female">&nbsp;&nbsp;Female</label>    <input type="radio" id="female" name="gender" value="female">
+                            <label for="other">&nbsp;&nbsp;Other</label>    <input type="radio" id="other" name="gender" value="other"></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Street Address: <input type="text" name="address" maxlength="40" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Suburb: <input type="text" name="suburb" maxlength="40" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">State: <input list="states" name="state">
+                        <datalist id="states">
+                            <option value="VIC"></option>
+                            <option value="NSW"></option>
+                            <option value="QLD"></option>
+                            <option value="NT"></option>
+                            <option value="WA"></option>
+                            <option value="SA"></option>
+                            <option value="TAS"></option>
+                            <option value="ACT"></option>
+                        </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">Postcode: <input type="text" name="postcode" minlength="4" maxlength="4" pattern="[0-9]{4}" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Email Address: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Phone Number: <input type="tel" name="Phone" pattern="[0,9]{8,12}" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content">Skills: <label for="python">Python</label><input type="checkbox" id="python" name="python" value="python" required></td>
+                    </tr>
+                    <tr>
+                        <td class="content"><label for="html">HTML</label><input type="checkbox" id="html" name="html" value="html"></td>
+                    </tr>
+                    <tr>
+                        <td class="content"><label for="php">PHP</label><input type="checkbox" id="php" name="php" value="php"></td>
+                    </tr>
+                    <tr>
+                        <td class="content"><label for="other">Other Skills</label><input type="checkbox" id="other" name="other" value="other"></td>
+                    </tr>
+                    <tr>
+                        <td class="content"><input type="text" size="29px" id="otherskills" name="otherskills" placeholder="If you have other skills, list them here!"></td>
+                    </tr>
+                    <tr>
+                        <td class="button"><input type="submit" value="Submit!" >&nbsp;&nbsp;<input type="reset" ></td>
+                    </tr>
+                </form>
+            </table>
+        </section>
+    </body>
+</html>
